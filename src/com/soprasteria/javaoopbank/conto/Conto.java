@@ -50,7 +50,7 @@ public class Conto {
 			   "Numero conto: "+ numeroConto + "\n" + this.contoFormattato();
 	}
 	
-	public String contoFormattato() {
+	private String contoFormattato() {
 		return String.format("Il saldo attuale sul conto è: %.2f", saldo);
 	}
 
