@@ -8,7 +8,7 @@ public class Conto {
 	private String nomeProprietario;
 	private double saldo;
 	
-	private Random r;
+	private Random r = new Random();
 	
 	public Conto(String nomeProprietario) {
 		super();
