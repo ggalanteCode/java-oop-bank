@@ -51,7 +51,7 @@ public class Conto {
 	}
 	
 	private String contoFormattato() {
-		return String.format("Il saldo attuale sul conto è: %.2f", saldo);
+		return String.format("Il saldo attuale sul conto è: %.2f €", saldo);
 	}
 
 }
