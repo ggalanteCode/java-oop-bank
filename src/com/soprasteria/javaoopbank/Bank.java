@@ -30,7 +30,7 @@ public class Bank {
 				System.out.println(myConto.informazioniConto());
 				break;
 			case 2:
-				System.out.print("Quantio soldi vuoi prelevare dal tuo conto?:");
+				System.out.print("Quanti soldi vuoi prelevare dal tuo conto?:");
 				sommaDaVersarePrelevare = s.nextInt();
 				if(myConto.prelievo(sommaDaVersarePrelevare) == -1) {
 					System.err.println("ERRORE: NON HAI ABBASTANZA SOLDI SUL TUO CONTO!");
