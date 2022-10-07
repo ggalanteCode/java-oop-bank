@@ -16,7 +16,7 @@ public class Conto {
 		this.nomeProprietario = nomeProprietario;
 		this.saldo = 0;
 	}
-
+	
 	public String getNomeProprietario() {
 		return nomeProprietario;
 	}
@@ -31,6 +31,27 @@ public class Conto {
 
 	public double getSaldo() {
 		return saldo;
+	}
+	
+	public void versamento(double sommaDaVersare) {
+		this.saldo += sommaDaVersare;
+	}
+	
+	public double prelievo(double sommaDaPrelevare) {
+		if(!(sommaDaPrelevare > this.saldo)) {
+			return this.saldo -= sommaDaPrelevare;
+		} else {
+			return -1;
+		}
+	}
+	
+	public String informazioniConto() {
+		return "Proprietario del conto: " + nomeProprietario + "\n" +
+			   "Numero conto: "+ numeroConto + "\n" + this.contoFormattato();
+	}
+	
+	public String contoFormattato() {
+		return String.format("Il saldo attuale sul conto è: %f", saldo);
 	}
 
 }
